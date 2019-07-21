@@ -1,20 +1,33 @@
 <!DOCTYPE html>
 <html>
+
 <body>
-<div class="header" style="background: url('./images/bakaBG.png');height: 920px" >
-asdas
-</div>
-<img src="C:/Users/Abd Al-Gader/Documents/Projects/Laravel/twitter/storage/app/image/marco-conn/22424.jpeg" width="260px" alt="">
-<h1>Hello World</h1>
-<a href="https://baka-team.github.io/baka-team">baka team site.</a>
+    <svg style="width:100%;height:720px">
+        <filter id="filter">
+            <feTurlbulence type="fractalNoise" baseFrequency="0.01" numOctaves="10" />
+            <feDisplacementMap in="SourceGraphic" scale="10" />
+        </filter>
+    </svg>
+    <h1>Hello World</h1>
+    <a href="https://baka-team.github.io/baka-team">baka team site.</a>
+    <div id="cloud-circle">
+
+    </div>
 </body>
 <style>
-    body{
+    body {
         padding: 0;
         margin: 0;
     }
-    .header{
+
+    .header {
         width: 100%;
     }
+
+    #cloude-circle {
+        filter: url(#filter);
+        box-shadow: 200px 200px 50px 0 #fff;
+    }
 </style>
+
 </html>
