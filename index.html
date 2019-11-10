@@ -1,34 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Abd Al-gader</title>
 </head>
+
 <body>
     <div id="app">
         <div class="header-section">
             <div class="navigation-bar">
                 <img src="./images/avatar.jpg" style="width: 78px;border-radius: 50%" alt="" srcset="">
                 <!-- 5050f6 -->
-                <div style="font-size: 1.4em;font-weight: 100;margin: 15px 0px 0px 18px;">Abd Algader <br><span style="color:rgb(46, 106, 248)">M. Sirag</span></div>
+                <div style="font-size: 1.4em;font-weight: 100;margin: 15px 0px 0px 18px;">Abd Algader
+                    <br>
+                    <span style="color:rgb(46, 106, 248)">M. Sirag</span>
+                </div>
             </div>
             <div class="header-body">
-                    <div class="contact">
-                            <div></div>
+                <div class="contact">
+                    <div style="width: 42px;margin-top: -98px;margin-left: 18px">
+                        <div>
+                            <img src="./images/soc/pinterest.svg" class="contact-icon" alt="" srcset="">
                         </div>
+                        <div>
+                            <img src="./images/soc/twitter.svg" class="contact-icon" alt="" srcset="">
+                        </div>
+                        <div>
+                            <img src="./images/soc/youtube.svg" class="contact-icon" alt="" srcset="">
+                        </div>
+                    </div>
+                </div>
                 <div class="header-left">
                     <div style="font-size: 0.8em;font-weight: 100;margin-top: 19%;padding-right: 4%;border-right: 4px solid white">
                         11-20
-                        <br>
-                        DAYS
+                        <br> DAYS
                     </div>
                 </div>
                 <div class="header-rigth">
-                    GET YOUR<br>
-                    SITE IN DAYS<br>
-                    <span style="color:rgb(46, 106, 248);font-weight: 100">ORDER NOW!</span><br>
+                    GET YOUR
+                    <br> SITE IN DAYS
+                    <br>
+                    <span style="color:rgb(46, 106, 248);font-weight: 100">ORDER NOW!</span>
+                    <br>
                     <button id="subscrip">SUBSCRIP</button>
                 </div>
             </div>
@@ -37,43 +53,49 @@
     </div>
 </body>
 <style>
-    body{
+    body {
         margin: 0;
         font-family: Montserrat;
     }
 
-    #app{
+    #app {
         width: 100%;
         background-color: rgb(207, 214, 221);
     }
 
-    .navigation-bar{
+    .navigation-bar {
         display: flex;
     }
 
-    #subscrip{
+    #subscrip {
         transition: all 160ms;
-        font-size: 0.8em;border: 6px solid white;background-color: inherit;color:white;border-radius: 42px;padding:0 24px;cursor: pointer;
+        font-size: 0.8em;
+        border: 6px solid white;
+        background-color: inherit;
+        color: white;
+        border-radius: 42px;
+        padding: 0 24px;
+        cursor: pointer;
     }
 
-    #subscrip:hover{
+    #subscrip:hover {
         background-color: white;
-        color:rgb(44, 32, 56);
+        color: rgb(44, 32, 56);
     }
 
-    .header-section{
+    .header-section {
         width: 90%;
         padding: 28px 5%;
         background-color: rgb(44, 32, 56);
         color: white;
     }
 
-    .contact{
+    .contact {
         width: 10%;
         min-width: 46px;
     }
 
-    .header-body{
+    .header-body {
         display: flex;
         width: 80%;
         padding: 52px 10% 52px 0;
@@ -84,12 +106,12 @@
         cursor: default;
     }
 
-    .header-left{
+    .header-left {
         width: 44%;
         text-align: end;
     }
 
-    .header-rigth{
+    .header-rigth {
         padding-left: 3%;
         width: 48%;
     }
@@ -100,6 +122,7 @@
 </style>
 <script>
     var header = document.getElementsByClassName("header-section")[0];
-    header.style.height = window.innerHeight - (28*2) + 'px';
+    header.style.height = window.innerHeight - (28 * 2) + 'px';
 </script>
+
 </html>
