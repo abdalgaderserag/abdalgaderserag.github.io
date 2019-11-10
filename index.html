@@ -10,23 +10,26 @@
     <div id="app">
         <div class="header-section">
             <div class="navigation-bar">
-                <img src="./images/avatar.jpg" alt="" srcset="">
+                <img src="./images/avatar.jpg" style="width: 78px;border-radius: 50%" alt="" srcset="">
                 <!-- 5050f6 -->
-                <div style="font-size: 1.6em;font-weight: 100">Abd Algader <br><span style="color:rgb(46, 106, 248)">M. Sirag</span></div>
+                <div style="font-size: 1.4em;font-weight: 100;margin: 15px 0px 0px 18px;">Abd Algader <br><span style="color:rgb(46, 106, 248)">M. Sirag</span></div>
             </div>
             <div class="header-body">
+                    <div class="contact">
+                            <div></div>
+                        </div>
                 <div class="header-left">
-                    <div style="font-size: 0.8em;font-weight: 100;margin-top: 19%;padding-right: 4%;">
+                    <div style="font-size: 0.8em;font-weight: 100;margin-top: 19%;padding-right: 4%;border-right: 4px solid white">
                         11-20
                         <br>
                         DAYS
                     </div>
                 </div>
-                <div class="header-right">
+                <div class="header-rigth">
                     GET YOUR<br>
                     SITE IN DAYS<br>
                     <span style="color:rgb(46, 106, 248);font-weight: 100">ORDER NOW!</span><br>
-                    <button style="font-size: 0.8em;border: 6px solid white;background-color: inherit;color:white;border-radius: 42px;padding:0 24px;cursor: pointer;">SUBSCRIP</button>
+                    <button id="subscrip">SUBSCRIP</button>
                 </div>
             </div>
         </div>
@@ -44,6 +47,20 @@
         background-color: rgb(207, 214, 221);
     }
 
+    .navigation-bar{
+        display: flex;
+    }
+
+    #subscrip{
+        transition: all 160ms;
+        font-size: 0.8em;border: 6px solid white;background-color: inherit;color:white;border-radius: 42px;padding:0 24px;cursor: pointer;
+    }
+
+    #subscrip:hover{
+        background-color: white;
+        color:rgb(44, 32, 56);
+    }
+
     .header-section{
         width: 90%;
         padding: 28px 5%;
@@ -51,21 +68,30 @@
         color: white;
     }
 
+    .contact{
+        width: 10%;
+        min-width: 46px;
+    }
+
     .header-body{
         display: flex;
         width: 80%;
-        padding: 52px 10%;
+        padding: 52px 10% 52px 0;
         font-size: 4.6em;
-        margin-top: 82px;
+        margin-top: 42px;
+        user-select: none;
+        -moz-user-select: none;
+        cursor: default;
     }
 
     .header-left{
-        width: 46%;
+        width: 44%;
         text-align: end;
     }
 
     .header-rigth{
-        width: 40%;        
+        padding-left: 3%;
+        width: 48%;
     }
 
     /* #min-logo{ 
