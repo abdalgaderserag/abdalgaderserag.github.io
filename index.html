@@ -13,7 +13,7 @@
         <div class="header-section">
             <div class="navigation-bar">
                 <div style="display: flex">
-                    <img src="./images/avatar.jpg" style="width: 78px;border-radius: 50%" alt="" srcset="">
+                    <img src="" id="avatar" style="width: 78px;border-radius: 50%" alt="" srcset="">
                     <!-- 5050f6 -->
                     <div style="font-size: 1.4em;font-weight: 100;margin: 15px 0px 0px 18px;">Abd Algader
                         <br>
@@ -24,17 +24,24 @@
                     <img src="./images/soc/menu.svg" style="width: 58px;height: 58px;margin-top: 18px" alt="" srcset="">
                 </div>
             </div>
+            
             <div class="header-body">
                 <div class="contact">
                     <div style="width: 42px;margin-top: -98px;margin-left: 18px">
                         <div>
-                            <img src="./images/soc/pinterest.svg" class="contact-icon" alt="" srcset="">
+                            <a class="soc" href="">
+                                <img src="./images/soc/pinterest.svg" class="contact-icon" alt="" srcset="">
+                            </a>
                         </div>
                         <div>
-                            <img src="./images/soc/twitter.svg" class="contact-icon" alt="" srcset="">
+                            <a class="soc" href="">
+                                <img src="./images/soc/twitter.svg" class="contact-icon" alt="" srcset="">
+                            </a>
                         </div>
                         <div>
-                            <img src="./images/soc/youtube.svg" class="contact-icon" alt="" srcset="">
+                            <a class="soc" href="">
+                                <img src="./images/soc/youtube.svg" class="contact-icon" alt="" srcset="">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -53,6 +60,8 @@
                     <button id="subscrip">SUBSCRIP</button>
                 </div>
             </div>
+
+            
         </div>
 
     </div>
@@ -122,13 +131,28 @@
         width: 48%;
     }
 
-    /* #min-logo{ 
-        width: 172px;
-    }*/
 </style>
 <script>
-    var header = document.getElementsByClassName("header-section")[0];
-    header.style.height = window.innerHeight - (28 * 2) + 'px';
+    function resizing() {
+        var header = document.getElementsByClassName("header-section")[0];
+        header.style.minHeight = window.innerHeight - (28 * 2) + 'px';
+    }
+    resizing();
+    window.onresize = function () {
+        resizing();
+    }
+    var data = {
+        "avatar": "./images/avatar.jpg",
+        "profile": "http://github.com/abdalgaderserag",
+        "pinterest": "#",
+        "twitter": "#",
+        "youtube": "#"
+    };
+
+    document.getElementById("avatar").src = data.avatar;
+    document.getElementsByClassName("soc")[0].href = data.pinterest;
+    document.getElementsByClassName("soc")[1].href = data.twitter;
+    document.getElementsByClassName("soc")[2].href = data.youtube;
 </script>
 
 </html>
