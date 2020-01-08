@@ -6,48 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Abd Al-gader</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="dns-prefetch" href="./fonts/OLD.ttf">
 </head>
 
 <body>
     <div id="app">
         <div class="header-section">
             <div class="navigation-bar">
-                <div style="display: flex">
-                    <img src="" id="avatar" style="width: 78px;border-radius: 50%" alt="" srcset="">
+                <div id="avatar-text">
+                    <img src="" id="avatar">
                     <!-- 5050f6 -->
-                    <div style="font-size: 1.4em;font-weight: 100;margin: 15px 0px 0px 18px;">Abd Algader
+                    <div>Abd Algader
                         <br>
-                        <span style="color:rgb(46, 106, 248)">M. Sirag</span>
+                        <span>M. Sirag</span>
                     </div>
                 </div>
-                <div>
-                    <img src="./images/soc/menu.svg" style="width: 58px;height: 58px;margin-top: 18px" alt="" srcset="">
+                <div id="top-images">
+                    <img src="./images/top-line.svg">
+                    <img src="./images/soc/menu.svg">
                 </div>
             </div>
-            
+
             <div class="header-body">
                 <div class="contact">
-                    <div style="width: 42px;margin-top: -98px;margin-left: 18px">
+                    <div>
                         <div>
                             <a class="soc" href="">
-                                <img src="./images/soc/pinterest.svg" class="contact-icon" alt="" srcset="">
+                                <img src="./images/soc/pinterest.svg" class="contact-icon">
                             </a>
                         </div>
                         <div>
                             <a class="soc" href="">
-                                <img src="./images/soc/twitter.svg" class="contact-icon" alt="" srcset="">
+                                <img src="./images/soc/twitter.svg" class="contact-icon">
                             </a>
                         </div>
                         <div>
                             <a class="soc" href="">
-                                <img src="./images/soc/youtube.svg" class="contact-icon" alt="" srcset="">
+                                <img src="./images/soc/youtube.svg" class="contact-icon">
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="header-left">
-                    <div style="font-size: 0.8em;font-weight: 100;margin-top: 19%;padding-right: 4%;border-right: 4px solid white">
+                    <div>
                         11-20
                         <br> DAYS
                     </div>
@@ -56,104 +58,58 @@
                     GET YOUR
                     <br> SITE IN DAYS
                     <br>
-                    <span style="color:rgb(46, 106, 248);font-weight: 100">ORDER NOW!</span>
+                    <span>ORDER NOW!</span>
                     <br>
                     <button id="subscrip">SUBSCRIP</button>
                 </div>
             </div>
-
-            
         </div>
+        <div style="max-width: 1600px;align-self: center">
+            <div id="about">
+                <img src="./images/line-shadow.svg">
+                <div class="customize">
+                    <div class="customize-section">
+                        <div class="customize-text">
+                            <div>Get the site you dream of in the way you want!</div>
+                            <br>
+                            <div style="margin-left: 24px;color: #575757">you can hourly check the look of the site change edit the design.</div>
+                            <br>
+                            <div style="margin-left: 48px;color: #57575785">get the prototype for your site today.</div>
+                        </div>
+                    </div>
+                    <div class="customize-section">
+                        <div class="title" style="width: 100%">
+                            Customize Your Site!
+                            <hr>
+                        </div>
+                        <img class="dev" src="./images/sites/big-size.png">
+                    </div>
+                </div>
+            </div>
 
+            <div id="projects">
+                <div class="title" style="margin-bottom: 46px;padding-left: 3%">
+                    See your site build
+                    <br>step by step
+                    <hr>
+                </div>
+                <img class="site-image" src="./images/sites/video-view.png" style="margin-left: 16%;margin-bottom: 6%;">
+                <div class="title" style="margin: 46px 0;margin-left: 50%">
+                    Optizmized and clean
+                    <hr>
+                </div>
+                <img class="site-image" src="./images/sites/big-size.png" style="margin: -3px 0 0 6%;">
+            </div>
+
+            <div style="width: 100%;background-color: #607d8b;padding: 76px 0 46px 0;height: 274px;">
+                <div class="card" style="width: 28%;height: 550px;margin-left: 58%;background-color: #f2f4fb;border-radius: 5pt;padding: 16px 28px;box-shadow: 0 0 4px 3px #2c203873;position: absolute;">
+                </div>
+            </div>
+            <div style="width: 100%;height: 460px;background-color: #2c2038;">
+            </div>
+        </div>
     </div>
 </body>
-<style>
-    body {
-        margin: 0;
-        font-family: Montserrat;
-    }
-
-    #app {
-        width: 100%;
-        background-color: rgb(207, 214, 221);
-    }
-
-    .navigation-bar {
-        display: flex;
-        justify-content: space-between
-    }
-
-    #subscrip {
-        transition: all 160ms;
-        font-size: 0.8em;
-        border: 6px solid white;
-        background-color: inherit;
-        color: white;
-        border-radius: 42px;
-        padding: 0 24px;
-        cursor: pointer;
-    }
-
-    #subscrip:hover {
-        background-color: white;
-        color: rgb(44, 32, 56);
-    }
-
-    .header-section {
-        width: 90%;
-        padding: 28px 5%;
-        background-color: rgb(44, 32, 56);
-        color: white;
-    }
-
-    .contact {
-        width: 10%;
-        min-width: 46px;
-    }
-
-    .header-body {
-        display: flex;
-        width: 80%;
-        padding: 52px 10% 52px 0;
-        font-size: 4.6em;
-        margin-top: 42px;
-        user-select: none;
-        -moz-user-select: none;
-        cursor: default;
-    }
-
-    .header-left {
-        width: 38%;
-        text-align: end;
-    }
-
-    .header-rigth {
-        padding-left: 3%;
-        width: 48%;
-    }
-
-</style>
-<script>
-    function resizing() {
-        var header = document.getElementsByClassName("header-section")[0];
-        header.style.minHeight = window.innerHeight - (28 * 2) + 'px';
-    }
-    resizing();
-    window.onresize = function () {
-        resizing();
-    }
-    var data = {
-        "avatar": "https://avatars1.githubusercontent.com/u/38109544?s=240&v=4",
-        "profile": "http://github.com/abdalgaderserag",
-        "pinterest": "#",
-        "twitter": "#",
-        "youtube": "#"
-    };
-
-    document.getElementById("avatar").src = data.avatar;
-    document.getElementsByClassName("soc")[0].href = data.pinterest;
-    document.getElementsByClassName("soc")[1].href = data.twitter;
-    document.getElementsByClassName("soc")[2].href = data.youtube;
-</script>
+<script src="./script/script.js"></script>
 
 </html>
