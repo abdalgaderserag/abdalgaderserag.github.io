@@ -10,7 +10,7 @@ window.onresize = function () {
 
 
 var data = {
-    "avatar": "./images/avatar.jpg",
+    "avatar": "./images/SAVE_20240615_083905.jpg",
     "profile": "http://github.com/abdalgaderserag",
     "pinterest": "#",
     "twitter": "#",
