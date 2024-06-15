@@ -17,7 +17,7 @@ var data = {
     "youtube": "#"
 };
 
-document.getElementById("avatar").src = data.avatar;
+//document.getElementById("avatar").src = data.avatar;
 document.getElementsByClassName("soc")[0].href = data.pinterest;
 document.getElementsByClassName("soc")[1].href = data.twitter;
 document.getElementsByClassName("soc")[2].href = data.youtube;
