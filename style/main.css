@@ -44,6 +44,7 @@ body {
 }
 
 #top-images img:last-child {
+    visibility: hidden;
     width: 58px;
     height: 58px;
     margin-top: 18px;
@@ -271,4 +272,13 @@ body {
 }
 .site-title:last-child{
     height: auto;
+}
+.price-card{
+    width: 20%;
+    margin: 0 16px;
+    height: 420px;
+    background-color: #f2f4fb;
+    border-radius: 5pt;
+    padding: 16px 28px;
+    box-shadow: 0 0 4px 3px #2c203873;
 }
