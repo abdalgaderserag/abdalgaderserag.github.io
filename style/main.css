@@ -107,7 +107,7 @@ body {
 }
 
 .site-image{
-    width: 80%;
+    width: 100%;
     border-radius: 14pt;
     box-shadow:0 1px 4px 2px #9b9b9b80;
 }
@@ -249,4 +249,26 @@ body {
         width: 62% !important;
         margin-left: 12% !important;
     }
+}
+
+.site-stage{
+    width: 30%;
+    margin: 0 2% 0 2%;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+.site-stage:last-child{
+    margin-right: 2%;
+    height: 876px;
+    border-radius: 20px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+.site-title{
+    height: auto;
+    font-size: 2.2em;
+    margin: 0 0 16px 4%;
+}
+.site-title:last-child{
+    height: auto;
 }
